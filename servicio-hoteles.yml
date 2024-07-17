@@ -6,9 +6,8 @@ spring:
   password: hotel
  jpa:
   hibernate:
-   naming: 
-   implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
-   physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+   naming.implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+   naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 eureka:
  client:
   service-url:
