@@ -1,20 +1,19 @@
 spring:
  datasource:
   driver-class-name: com.mysql.cj.jdbc.Driver
-  url:jdbc: mysql://192.168.1.134:3306/hotel?serverTimezone=UTC
+  url: jdbc:mysql://192.168.1.134:3306/hotel?serverTimezone=UTC
   username: hotel
   password: hotel
  jpa:
   hibernate:
-   naming: 
-   implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
-   physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+   naming.implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+   naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 eureka:
  client:
-  service-url:
+  serviceUrl:
    defaultZone: http://192.168.1.134:8761/eureka
 server:
- port=8082
+ port: 8082
 logging:
  level:
   org:
