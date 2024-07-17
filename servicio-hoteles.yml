@@ -10,7 +10,7 @@ spring:
    naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 eureka:
  client:
-  service-url:
+  serviceUrl:
    defaultZone: http://192.168.1.134:8761/eureka
 server:
  port: 8081
