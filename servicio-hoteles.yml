@@ -20,3 +20,6 @@ logging:
    hibernate:
     SQL: DEBUG
     type: TRACE
+springdoc:
+ packagesToScan: com.curso.controller
+ pathsToMatch: /**
